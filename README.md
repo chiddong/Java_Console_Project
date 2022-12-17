@@ -1,7 +1,6 @@
 # Java_Console_Project
-###팀 프로젝트
 
-👩‍💻 5명이 진행한 JAVA Console Project 입니다.
+##👩‍💻 5명이 진행한 JAVA Console Project 입니다.
 
 ☑️ Project Stack
 
