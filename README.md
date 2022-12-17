@@ -4,6 +4,7 @@
 
 ☑️ Project Stack
 
+▶ 프로젝트 기간: 2022.10.20 ~ 2022.11.04
 ▶ Java
   - 파일 입출력 : BufferedReader, Writer(new FileReader, Writer("path")
   - 컬렉션 : ArrayList<T>, Iterator, HashMap<T>
