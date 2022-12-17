@@ -7,7 +7,7 @@
 ▶ Java
   - 파일 입출력 : BufferedReader, Writer(new FileReader, Writer("path")
   - 컬렉션 : ArrayList<T>, Iterator, HashMap<T>
-  - 기타 : 오버로딩, Random, Math, Scanner, 
+  - 기타 : 오버로딩, Random, Math, Scanner
 
 
 
