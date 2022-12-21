@@ -1,10 +1,8 @@
-# Java_Console_Project
+# Java_Console_Project👩‍💻
 
-## 👩‍💻 5명이 진행한 JAVA Console Project 입니다.
+## ☑️ Project Stack
 
 ---
-
-### ☑️ Project Stack
 
 ▶ 프로젝트 기획 의도:
 
@@ -25,6 +23,8 @@
 ---
 
 ▶ 프로젝트 기간: 2022.10.20 ~ 2022.11.04
+
+▶ 프로젝트 참여인원: 5명
 
 ▶ 사용된 기술
   - 파일 입출력 : BufferedReader, Writer(new FileReader, Writer("path")
