@@ -51,7 +51,7 @@
 
 ### ✨ 담당 업무
 - **회원** 
-     1. 장바구니/찜 목록 추가 및 삭제
+     1. 장바구니 추가 및 삭제
 &nbsp;
 &nbsp;
 &nbsp;     
@@ -85,31 +85,137 @@
 &nbsp;
 &nbsp;
 &nbsp;     
+ 
+     2. 장바구니 추가 및 삭제
+&nbsp;
+&nbsp;
+&nbsp;     
+     ![image](https://user-images.githubusercontent.com/111338981/214494782-64aa5ebb-3ce2-4873-915e-a31820290482.png)
+     ![image](https://user-images.githubusercontent.com/111338981/214494799-2d83f935-2c8c-4261-9523-279eafed4c1f.png)
+     ![image](https://user-images.githubusercontent.com/111338981/214494813-067201f2-b27b-4e01-8e56-d3de90f3b7c8.png)
+&nbsp;
+&nbsp;
+- 내용
+ 
+
+    상품을 둘러보던 개인 회원이 원하는 상품을 찜 할 수 있는 기능입니다.
+    상품 검색 후 찜 목록 추가가 가능하며, 구매를 원할 경우 장바구니로 이동 후에 구매할 수 있습니다.
+    추가로 찜 목록에서 삭제를 원하는 제품을 삭제할 수 있습니다.
+
+ 
+ 
+- 기술
+     ###### Scanner, ArrayList, BufferedReader, BufferedWriter, Stream
+
+
+    Stream을 통해 로그인한 회원의 ID에 해당하는 찜 목록을 출력하였고,
+    찜 목록 추가를 누르면 Wish 객체의 setter를 이용하여 회원 아이디와 상품코드, 상품명, 가격, 쇼핑몰 데이터를 넣어주었습니다. 
+    처음에는 getter와 setter의 사용에 대해 능숙하지 못했지만, 앞선 장바구니 추가와 더불어 찜 목록 추가를 하게 되면서 
+    점차적으로 getter와 setter 사용에 능숙해질 수 있었습니다
+
+
+
+&nbsp;
+&nbsp;
+&nbsp;          
+     3. 구매(전체 상품 구매 및 선택 상품 구매)
+&nbsp;
+&nbsp;
+&nbsp;     
+     ![image](https://user-images.githubusercontent.com/111338981/214494963-609d1eeb-cfea-4808-a7eb-b052fb1cedea.png)
+     ![image](https://user-images.githubusercontent.com/111338981/214494979-a825a39a-33e6-44de-8925-715ea18c4347.png)
+&nbsp;
+&nbsp;
+- 내용
+ 
+
+    개인회원이 장바구니에 추가된 상품 혹은 검색을 통해서 원하는 상품을 구매할 수 있습니다.
+    장바구니 상품 구매 시, 전체구매와 개별 구매로 나누어서 구매 가능하며,
+    구매 시 장바구니에서는 자동으로 삭제됩니다.
+
+
+ 
+ 
+- 기술
+     ###### Scanner, ArrayList, BufferedReader, BufferedWriter
+
+    선택 구매하기 클릭 시, deleteBasket(상품코드) 메소드를 호출하여 해당 상품을 장바구니 목록에서
+    바로 삭제되게 하였으며, 전체 구매하기 클릭 시 회원 아이디를 매개변수로 하는 allDeleteBasket 메소드를
+    호출하여 전체 장바구니 목록이 비워질 수 있게 하였습니다.
+
+
+
+&nbsp;
+&nbsp;
+&nbsp;          
+     4. 아이디/비밀번호 찾기 
      
-     2. 구매(전체 상품 구매 및 선택 상품 구매)
 &nbsp;
 &nbsp;
-&nbsp;
-     
-&nbsp;
-&nbsp;
-&nbsp;
-     3. 아이디/비밀번호 찾기 
-     
+&nbsp;     
+     ![image](https://user-images.githubusercontent.com/111338981/214495181-2850c1a9-93b8-4e8c-a244-e86223c5a9f0.png)
+     ![image](https://user-images.githubusercontent.com/111338981/214495200-5d440107-bf32-474a-876f-9a897cac5069.png)
 &nbsp;
 &nbsp;
+- 내용
+ 
+
+    개인 회원과 쇼핑몰 회원이 아이디나 비밀번호를 잊어버린 경우, 
+    회원(아이디: 이름+생년월일 / 비밀번호: 아이디+전화번호), 
+    쇼핑몰(아이디: 이름+사업자번호 / 비밀번호: 아이디+대표번호)를 입력 받아
+    각각의 정보를 이용하여 아이디나 비밀번호를 찾을 수 있다.
+
+
+
+ 
+ 
+- 기술
+     ###### Scanner, getter, setter
+
+    If문을 통해 scanner로 입력 받은 값과 일치하는 데이터를 순서대로 찾은 후에, 
+    최종 일치하는 값을 Member객체와 ShopMember객체의 getter를 통해 돌려받아 출력해주었습니다
+
+
+
+
 &nbsp;
-     
 &nbsp;
-&nbsp;
-&nbsp;
+&nbsp;          
 
 - **쇼핑몰**
     1. 아이디/비밀번호 찾기 
      
 &nbsp;
 &nbsp;
+&nbsp;     
+     ![image](https://user-images.githubusercontent.com/111338981/214495372-456f135c-6890-47c8-8bc2-0bb8a2680035.png)
+ ![image](https://user-images.githubusercontent.com/111338981/214495388-29d41ca8-8418-42e7-8e6e-89d517b22b9b.png)
 &nbsp;
+&nbsp;
+- 내용
+ 
+
+    개인 회원과 쇼핑몰 회원이 아이디나 비밀번호를 잊어버린 경우, 
+    회원(아이디: 이름+생년월일 / 비밀번호: 아이디+전화번호), 
+    쇼핑몰(아이디: 이름+사업자번호 / 비밀번호: 아이디+대표번호)를 입력 받아
+    각각의 정보를 이용하여 아이디나 비밀번호를 찾을 수 있다.
+
+
+
+
+- 기술
+     ###### Scanner, getter, setter
+
+    If문을 통해 scanner로 입력 받은 값과 일치하는 데이터를 순서대로 찾은 후에, 
+    최종 일치하는 값을 Member객체와 ShopMember객체의 getter를 통해 돌려받아 출력해주었습니다
+
+
+
+
+&nbsp;
+&nbsp;
+&nbsp;          
+
      
      
  ### ✨프로젝트를 통해
