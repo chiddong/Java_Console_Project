@@ -88,7 +88,10 @@
 &nbsp;
 &nbsp;     
  
+ 
      ✅ 장바구니 추가 및 삭제
+ 
+ 
 &nbsp;
 &nbsp;
 &nbsp;     
@@ -119,8 +122,12 @@
 
 &nbsp;
 &nbsp;
-&nbsp;          
+&nbsp;    
+ 
+ 
      ✅ 구매(전체 상품 구매 및 선택 상품 구매)
+ 
+ 
 &nbsp;
 &nbsp;
 &nbsp;     
