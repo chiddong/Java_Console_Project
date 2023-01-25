@@ -52,16 +52,56 @@
 ### ✨ 담당 업무
 - **회원** 
      1. 장바구니/찜 목록 추가 및 삭제
+&nbsp;
+&nbsp;
+&nbsp;     
+     ![image](https://user-images.githubusercontent.com/111338981/214494231-cc423de0-8387-4dcb-a150-4ab246d8ff73.png)
+     ![image](https://user-images.githubusercontent.com/111338981/214494327-ac952a79-6ab3-4e14-a585-46e3df8e8795.png)
+     ![image](https://user-images.githubusercontent.com/111338981/214494339-1221f547-88c8-4085-bc05-dfcc359f93ca.png)
+&nbsp;
+&nbsp;
+| 내용 | 개인 회원이 상품 검색 후에 혹은 찜 목록에서 장바구니에 추가를 할 수 있으며,
+장바구니 추가된 제품을 선택구매 혹은 전체구매 할 수 있습니다.
+구매 시에는 구매한 제품 목록과 총 금액을 출력하여 보여줍니다.
+이때 원하지 않는 상품을 선택삭제 혹은 장바구니 내역 전체삭제를 할 수 있습니다.|
+| 기술 | Scanner, ArrayList, Iterator, BufferedReader, BufferedWriter, Stream
+
+Stream을 통해 로그인한 회원의 ID에 해당하는 장바구니 목록을 출력하였고,
+장바구니 추가를 누르면 Basket 객체의 setter를 이용하여 
+회원 아이디와 상품코드, 상품명, 수량, 가격, 쇼핑몰 데이터를 넣어주었습니다.
+전체 상품 삭제시에는 Iterator를 사용하여 삭제를 진행하였는데, 처음에는 Iterator 사용법에 대해
+제대로 숙지가 되어 있지 않은 상황이라 다소 어려움을 느꼈으나, 프로젝트 진행을 하면서 Iterator 사용에
+대해서 잘 알게 되었고 이후에는 해당 내용을 팀원들에게 설명할 수 있게 되었습니다. |
+
+
+&nbsp;
+&nbsp;
+&nbsp;     
+     
      2. 구매(전체 상품 구매 및 선택 상품 구매)
-     3. 아이디/비밀번호 찾기 
+&nbsp;
+&nbsp;
 &nbsp;
      
+&nbsp;
+&nbsp;
+&nbsp;
+     3. 아이디/비밀번호 찾기 
+     
+&nbsp;
+&nbsp;
+&nbsp;
+     
+&nbsp;
+&nbsp;
+&nbsp;
+
 - **쇼핑몰**
     1. 아이디/비밀번호 찾기 
      
 &nbsp;
 &nbsp;
- &nbsp;
+&nbsp;
      
      
  ### ✨프로젝트를 통해
